@@ -295,22 +295,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    color: var(--text-light);
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
-.bike-preview::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/placeholder.svg?height=400&width=600') center/cover;
-    opacity: 0.3;
+.bike-preview img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
 }
+
 
 /* Features Section */
 .features {
